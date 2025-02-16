@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import MobileMenu from './MobileMenu';
+
 import { Button } from '@/components/ui/button';
 import { Bell, Menu, Search, X } from 'lucide-react';
 
@@ -12,7 +13,7 @@ const links = [
 ];
 
 const Header: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <header className="bg-white dark:bg-gray-800 shadow-sm">
